@@ -42,10 +42,10 @@ public class Fila {
     }
 
     public void exibeFila() {
-        String elementos = "";
+        StringBuilder elementos = new StringBuilder();
         if (!estaVazia()) {
             for (int i = inicio; i <= fim; i++) {
-                elementos += fila[i] + " ";
+                elementos.append(fila[i]).append(" ");
             }
             System.out.println("Fila: " + elementos);
         } else {
