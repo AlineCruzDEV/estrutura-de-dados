@@ -3,41 +3,41 @@ public class Fila {
     int inicio;
     int fim;
     int tamanho;
-    int qtdeElementos;
+    int controleElementos;
     int[] fila;
 
     public Fila() {
         inicio = fim = -1;
         tamanho = 6;
         fila = new int[tamanho];
-        qtdeElementos = 0;
+        controleElementos = 0;
     }
 
     public boolean estaVazia() {
-        return qtdeElementos == 0;
+        return controleElementos == 0;
     }
 
     public boolean estaCheia() {
-        return qtdeElementos == tamanho - 1;
+        return controleElementos == tamanho - 1;
     }
 
-    public void adicionaElemento(int e) {
+    public void adicionaElemento(int elemento) {
         if (!estaCheia()) {
             if (inicio == -1) {
                 inicio = 0;
             }
             fim++;
-            fila[fim] = e;
-            qtdeElementos++;
+            fila[fim] = elemento;
+            controleElementos++;
         } else {
-            System.out.println("Limite atingido. Elemento " + e + " não foi adicionado à fila.");
+            System.out.println("Limite atingido. Elemento " + elemento + " não foi adicionado à fila.");
         }
     }
 
     public void removeElemento() {
         if (!estaVazia()) {
             inicio++;
-            qtdeElementos--;
+            controleElementos--;
         }
     }
 
