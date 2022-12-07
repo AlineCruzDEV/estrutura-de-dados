@@ -26,4 +26,15 @@ public class Pilha {
             controleElementos--;
         }
     }
+
+//    Atividade simulando uma inversão de pilha usando a implementação de lista
+//    public Pilha inverte(Pilha p) {
+//        Pilha invertida = new Pilha();
+//        No aux;
+//        while (!p.topo == null){
+//            aux = pop(p);
+//            push(invertida, aux);
+//        }
+//        return invertida;
+//    }
 }
