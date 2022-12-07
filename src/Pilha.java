@@ -33,7 +33,7 @@ public class Pilha {
 //        No aux;
 //        while (!p.topo == null){
 //            aux = pop(p);
-//            push(invertida, aux);
+//            push(invertida, aux.v);
 //        }
 //        return invertida;
 //    }
